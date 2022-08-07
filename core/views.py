@@ -121,3 +121,7 @@ def upload(request):
     else:
         return redirect('/')
     # return HttpResponse('<h1>Upload View</h1>')
+
+@login_required(login_url='signin')
+def like_post(request):
+    pass
