@@ -61,7 +61,7 @@
                             </div>
     
                             <!-- notification contents -->
-                            <from>
+ 
                             <div class="flex justify-center flex-center text-center">
     
                                 <div class="flex flex-col choose-upload text-center">
@@ -73,6 +73,8 @@
                                         </svg>
                                     </div>
 
+                                    <form action="upload" method="POST" enctype="multipart/form-data">
+                                    {% csrf_token %}
                                     <p class="my-3 leading-6"> Upload pics
                                     </p>
                                     <div>
@@ -82,10 +84,11 @@
                                         <br>
                                         <button class="button bg-blue-700" type="submit">Upload</button>
                                     </div>
+                                    </form>
     
-                                    <a href="#" class="uk-text-muted mt-3 uk-link"
+                                    <!-- <a href="#" class="uk-text-muted mt-3 uk-link"
                                         uk-toggle="target: .choose-upload ;  animation: uk-animation-slide-right-small, uk-animation-slide-left-medium; queued: true">
-                                        Or Import Video </a>
+                                        Or Import Video </a> -->
                                 </div>
     
                                 <div class="uk-flex uk-flex-column choose-upload" hidden>
@@ -108,7 +111,6 @@
                                 </div>
                                 
                             </div>
-                            </from>
                             <div class="px-4 py-3 -mx-5 -mb-4 mt-5 border-t text-sm">
                                 Your Image size Must be Maxmium 5MB
                             </div>
