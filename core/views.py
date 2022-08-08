@@ -101,7 +101,7 @@ def settings(request):
             user_profile.location = location
             user_profile.save()
         
-        return redirect('settings')
+        return redirect('/')
 
     return render(request,'setting.html', {'user_profile':user_profile})
 
