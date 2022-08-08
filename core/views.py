@@ -47,11 +47,15 @@ def index(request):
     for users in final_suggestions_list:
         username_profile.append(users.id)
 
+    # i=0
     for ids in username_profile:
+        # if i == 4:
+        #     break
+        # i+=1
         profile_lists = Profile.objects.filter(id_user=ids)
         username_profile_list.append(profile_lists)
 
-    suggestions_username_profile_list = list(chain(*username_profile_list))
+    suggestions_username_profile_list = list(chain(*username_profile_list))[:4]
 
     return render(request, 'index.html', {'user_profile': user_profile, 'posts':feed_list, 'suggestions_username_profile_list': suggestions_username_profile_list})
 

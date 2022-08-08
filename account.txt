@@ -1,7 +1,36 @@
 1.  
     Name - Niteesh Yadav
-    Id - Nitish
+    Id - nitish
     Email - nitish@mail.com
     Pass - nitish
 
-2. 
+2.  
+    Name - Vaidh Prakash
+    Id - ved
+    Email - ved@mail.com
+    Pass - ved
+
+3.  
+    Name - Saurabh Pandey
+    Id - saurabh
+    Email - saurabh@mail.com
+    Pass - saurabh
+
+4.  
+    Name - Manish Kumar
+    Id - manish
+    Email - manish@mail.com
+    Pass - manish
+    
+5.  
+    Name - Sachin Kumar
+    Id - sachin
+    Email - sachin@mail.com
+    Pass - sachin
+
+6.  
+    Name - Akhilesh Kuriyal
+    Id - akhilesh
+    Email - akhilesh@mail.com
+    Pass - akhilesh
+
