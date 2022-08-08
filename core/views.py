@@ -144,6 +144,7 @@ def like_post(request):
         post.save()
         return redirect('/')
 
+@login_required(login_url='signin')
 def profile(request, pk): 
     user_object = User.objects.get(username=pk)
     user_profile = Profile.objects.get(user=user_object)
@@ -157,3 +158,7 @@ def profile(request, pk):
         'user_post_length': user_post_length,
     }
     return render(request, 'profile.html',context)
+
+@login_required(login_url='signin')
+def follow(request):
+    pass
